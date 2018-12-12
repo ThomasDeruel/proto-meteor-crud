@@ -1,0 +1,14 @@
+<template name="HomeLayout">
+    <h1>Formulaire</h1>
+    <label>Nom :</label>
+    <input id="name" type="text" placeholder="Nom">
+    <button id="send">Envoyer</button>
+
+    <ul>
+        {{#each list}}
+        <li>
+            {{name}} <button class="modified">modifier</button><button id="deleted">supprimer</button>
+        </li>
+        {{/each}}
+    </ul>
+</template>
